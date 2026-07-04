@@ -1,0 +1,75 @@
+# ============================================
+# 秋招自动推送 - 个人配置
+# ============================================
+
+# 基本信息
+personal:
+  name: "朱傲琦"
+  school: "浙江大学硕士 / 华中科技大学本科"
+  major: "社会工作 / 环境设计"
+  graduation: "2027-06"
+
+# 投递方向
+directions:
+  - name: "AI/科技产品经理"
+    priority: 1
+    keywords: ["AI产品经理", "产品经理", "数字化产品", "智能产品", "产品策划"]
+    exclude_keywords: ["算法工程师", "开发工程师", "后端", "前端"]
+    cities: ["深圳", "杭州", "上海", "广州", "武汉", "长沙"]
+
+  - name: "国央企数字化岗位"
+    priority: 1
+    keywords: ["数字化", "信息管理", "数据分析", "管培生", "综合管理"]
+    exclude_keywords: []
+    cities: ["深圳", "杭州", "武汉", "长沙"]
+
+  - name: "体制内/事业单位"
+    priority: 2
+    keywords: ["事业单位", "选调生", "人才引进", "定向招录"]
+    exclude_keywords: []
+    cities: ["武汉", "杭州", "长沙"]
+
+  - name: "HR方向"
+    priority: 2
+    keywords: ["人力资源", "HR", "HRBP", "组织发展"]
+    exclude_keywords: []
+    cities: ["深圳", "杭州", "武汉"]
+
+# 目标城市就业网站
+city_sites:
+  hangzhou:
+    name: "杭州"
+    urls:
+      - name: "杭州市人社局"
+        url: "https://hrss.hangzhou.gov.cn"
+      - name: "杭州人才网"
+        url: "https://www.hzrc.com"
+  wuhan:
+    name: "武汉"
+    urls:
+      - name: "武汉人事考试网"
+        url: "https://www.whptc.org.cn"
+      - name: "武汉人才网"
+        url: "https://www.job5156.com/wuhan"
+  changsha:
+    name: "长沙"
+    urls:
+      - name: "长沙人事考试网"
+        url: "http://m.changsha.offcn.com"
+      - name: "长沙人才网"
+        url: "https://www.cshr.com.cn"
+  shenzhen:
+    name: "深圳"
+    urls:
+      - name: "深圳人社局"
+        url: "http://hrss.sz.gov.cn"
+
+# 浙大就业中心
+zju:
+  base_url: "https://www.career.zju.edu.cn"
+  focus_areas: ["校招", "宣讲会", "专场招聘", "人才引进"]
+
+# Server酱推送配置（SendKey在GitHub Secrets中设置，不写在这里）
+serverchan:
+  enabled: true
+  # sendkey 从环境变量 SERVERCHAN_KEY 读取，不要明文写在这里！
